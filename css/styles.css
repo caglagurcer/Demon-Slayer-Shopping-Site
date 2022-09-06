@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Titillium Web', sans-serif;
+    outline:none;
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+:root{
+    --scarlet:#FF2400;
+    --black:#000;
+}
+
+html {
+    font-size:1em;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+    background: var(--black);
+}
+
+.header{
+    background:black;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.2rem 9%;
+    background: var(--black);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:100;
+    border-bottom: 0.1em solid #fff;
+}
+
+.header .logo img {
+    height:6em;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size:2rem;
+    color:#fff;
+}
+
+.header .navbar a:hover{
+    border-bottom: .1rem solid var(--scarlet);
+}
+
+.header .icons div{
+    color:#fff;
+    cursor:pointer;
+    font-size:2rem;
+    margin-left:1.5rem;
+}
+
+.header .icons div:hover{
+    color:var(--scarlet);
+}
+
+#menu-btn{
+    display:none;
+}
+
+.header .searching{
+    position:absolute;
+    top:100%; 
+    right:8%;
+    background:#fff;
+    width:30rem;
+    height:2.5rem;
+    display:flex;
+    align-items: center;
+    transform:scaleY(0);
+    transform-origin:top;
+}
+
+.header .searching input {
+    height:100%;
+    width:100%;
+    font-size:1.6rem;
+    color:var(--black);
+    padding:1rem;
+    text-transform: none;
+}
+
+.header .searching label{
+    cursor:pointer;
+    font-size:1.6rem;
+    margin-right:1.2rem;
+    color:var(--black);
+}
+
+.header .searching label:hover{
+    color:var(--scarlet);
+}
+
+/* Media Queries */
+@media (max-width:991px){
+   
+    #menu-btn{
+        display:inline-block;
+    }
+    .header .navbar{
+        position:absolute;
+        top:-100%;
+        right:0;
+        background:#fff;
+        width:30rem;
+        height:calc(100vh - 9.5rem);
+    }
+    .header .navbar a{
+        color:var(--black);
+        display:block;
+        margin:1.2rem;
+        padding:4rem;
+        font-size:2rem;
+    }
+}
+
+@media (max-qidth:450px) {
+    html{
+        font-size:50%;
+    }
+}
