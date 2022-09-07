@@ -13,6 +13,7 @@
 :root{
     --scarlet:#FF2400;
     --black:#000;
+    --orange:#ff9d2c;
 }
 
 html {
@@ -188,7 +189,7 @@ section{
     display:flex;
     align-items: center;
     flex-wrap:wrap;
-    background-color: #ff9d2c;
+    background-color: var(--orange);
 }
 
 .about .row .image{
@@ -211,6 +212,66 @@ section{
     font-size:2rem;
     padding:1rem 0;
     line-height: 1.8;
+}
+
+.products{
+    background-color: var(--black);
+}
+
+.products .box-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(30rem,1fr));
+    gap:1.5rem;
+}
+
+.products .box-container .box{
+    text-align: center;
+    padding:2rem;
+}
+
+.products .box-container .box .icons a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size:2rem;
+    color:#fff;
+    margin:.3rem;
+}
+
+.products .box-container .box .icons a:hover{
+    color:var(--scarlet);
+}
+
+.products .box-container .box .image{
+    padding:2.5rem 0;
+}
+
+.products .box-container .box .image img{
+    height:25rem;
+}
+
+.products .box-container .box .content h3{
+    color:var(--orange);
+    font-size:2.5rem;
+}
+
+.products .box-container .box .content .stars{
+    padding:1.5rem;
+}
+
+.products .box-container .box .content .stars i{
+    font-size:1.7rem;
+    color:#fff;
+}
+
+.products .box-container .box .content .price{
+    color:#fff;
+    font-size:2.5rem;
+}
+
+.products .box-container .box .content .price span{
+    text-decoration: line-through;
+    font-size:2rem;
 }
 
 /* Media Queries */
