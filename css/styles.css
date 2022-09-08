@@ -37,7 +37,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background: var(--bg);
+    background: var(--black);
 }
 
 section{
@@ -96,6 +96,10 @@ section{
 
 #menu-btn{
     display:none;
+}
+
+.home .content #second{
+    font-style: italic;
 }
 
 .header .search-box{
@@ -214,10 +218,6 @@ section{
     line-height: 1.8;
 }
 
-.products{
-    background-color: var(--black);
-}
-
 .products .box-container{
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(30rem,1fr));
@@ -274,9 +274,6 @@ section{
     font-size:2rem;
 }
 
-.contact{
-    background: var(--black);
-}
 
 .contact .row{
     display:flex;
@@ -308,21 +305,20 @@ section{
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background: var(--orange);
-    border:var(--scarlet);
+    background: #fff;
 }
 
 .contact .row form .inputBox span{
-    color:#fff;
+    color:var(--scarlet);
     font-size: 2rem;
-    padding-left: 2rem;;
+    padding-left: 2rem;
 }
 
 .contact .row form .inputBox input{
     width:100%;
     padding:2rem;
     font-size:1.7rem;
-    color: #fff;
+    color: var(--black);
     text-transform: none;
     background: none;
 }
@@ -407,7 +403,7 @@ section{
         right:-100%;
         background:rgb(204, 204, 204);
         width:30rem;
-        height:calc(62vh - 7rem);
+        height:calc(55vh - 7rem);
     }
 
     .header .navbar.active {
@@ -451,7 +447,7 @@ section{
         font-size:50%;
     }
     .header .navbar{
-        height:calc(56vh - 7rem);
+        height:calc(47vh - 7rem);
     }
    
 }
