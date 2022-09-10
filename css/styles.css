@@ -225,6 +225,7 @@ section{
 .products .box-container .box{
     text-align: center;
     padding:2rem;
+    border: solid 1px var(--scarlet);
 }
 
 .products .box-container .box .icons a{
